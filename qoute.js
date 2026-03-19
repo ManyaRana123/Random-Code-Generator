@@ -1,0 +1,35 @@
+const qoutes = document.getElementById("qoutes");
+const button = document.getElementById("btn");
+
+const arr = [
+    "“The power of positive thinking is the ability to generate a feeling of certainty in yourself when nothing in the environment supports you.”" ,
+    "“When you are grateful, fear disappears and abundance appears.”",
+    "“If you can’t, you must. If you must, you can.”",
+    "“The only thing that’s keeping you from getting what you want is the story you keep telling yourself.”",
+    "“Your past does not equal your future.”",
+    "“a woman is standing on a wooden fence overlooking a field”" , 
+    "“Identify your problems, but give your power and energy to solutions.”",
+    "“Any time you sincerely want to make a change, the first thing you must do is to raise your standards.”",
+    "“The path to success is to take massive, determined action.”",
+    "“Setting goals is the first step in turning the invisible into the visible.”",
+    "“Goals are like magnets. They’ll attract the things that make them come true.”",
+    "“People who fail focus on what they have to go through; people who succeed focus on what it will feel like at the end.”",
+    "“Persistence overshadows even talent as the most valuable resource shaping the quality of life.”",
+    "“If you do what you’ve always done, you’ll get what you’ve always gotten.”",
+    "“It’s what you practice in private that you’ll be rewarded for in public.”",
+    "“In life you need either inspiration or desperation.”",
+    "“a person is holding a colorful rubik 's cube in their hands.”",
+    "“Every problem is a gift – without problems we would not grow.”",
+    "“It is in your moments of decision that your destiny is shaped.”",
+    "“You see, in life, lots of people know what to do, but few actually do what they know. Knowing is not enough! You must take action.”",
+    "“You don’t have to have a reason to feel good. You’re alive! You can feel good for no reason at all!”",
+    "“If you talk about it, it’s a dream. If you envision it, it’s possible. If you schedule it, it’s real."
+
+];
+
+button.addEventListener("click",()=> {
+
+const index = Math.floor(Math.random()*20);
+qoutes.textContent = arr[index];
+
+});
